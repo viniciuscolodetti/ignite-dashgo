@@ -52,6 +52,7 @@ export function makeServer() {
           { users }
         )
       });
+      this.get('/users/:id');
       this.post('/users');
 
       // reseta o namespace das API para não prejudicar as apiroutes do next
